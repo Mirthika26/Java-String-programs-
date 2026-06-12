@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String str = sc.nextLine();
+        String goal = sc.nextLine();
+
+        if(str.length() == goal.length() && (str + str).contains(goal))
+            System.out.print("true");
+        else
+            System.out.print("false");
+    }
+}
